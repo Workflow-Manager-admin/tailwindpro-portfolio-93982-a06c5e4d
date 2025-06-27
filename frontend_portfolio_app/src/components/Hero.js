@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import profileOld from "../assets/profile_v2.jpg";
 import profileNew from "../assets/glassmorphic_hero.jpg";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 
 /**
@@ -22,6 +22,13 @@ function Hero() {
   const rotateX = useSpring(useMotionValue(0), { stiffness: 180, damping: 15 });
   const rotateY = useSpring(useMotionValue(0), { stiffness: 180, damping: 15 });
   const shadow = useSpring(useMotionValue(0), { stiffness: 120, damping: 18 });
+
+  // Use Framer Motion useTransform to generate the derived shadow filter CSS
+  const dropShadow = useTransform(
+    shadow,
+    // s is in range ~[-1, 1] (mouse from top to bottom)
+    (s) => `drop-shadow(0px ${16 + s * 10}px 44px rgba(63,48,115,0.13))`
+  );
 
   function handleMouseMove(e) {
     if (!imgRef.current) return;
@@ -89,9 +96,7 @@ function Hero() {
               transformPerspective: 800,
               rotateX,
               rotateY,
-              filter: shadow.to((s) =>
-                `drop-shadow(0px ${16 + s * 10}px 44px rgba(63,48,115,0.13))`
-              ),
+              filter: dropShadow, // use framer-motion's animated transform, not .to()
               transition: "box-shadow .4s cubic-bezier(.55,.1,.16,.99)",
             }}
           />
