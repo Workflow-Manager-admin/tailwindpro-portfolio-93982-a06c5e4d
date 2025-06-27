@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for transitions, accent backgrounds, etc. */
+body {
+  @apply font-sans bg-background-light text-zinc-900 dark:bg-background-dark dark:text-white duration-200;
+}
