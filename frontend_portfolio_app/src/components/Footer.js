@@ -14,7 +14,15 @@ const socials = [
 function Footer() {
   /** Footer for Sathish's portfolio: modern, minimal, and fully responsive. */
   return (
-    <footer className="w-full py-8 bg-zinc-100 dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 transition-colors">
+    <footer
+      className="w-full py-8 glass-bg glass-micro border-t border-white/10 dark:border-zinc-700/20 transition-colors"
+      style={{
+        background:
+          "linear-gradient(126deg,rgba(255,255,255,0.65) 36%,rgba(220,220,255,0.13) 100%)",
+        borderTop: "1px solid rgba(255,255,255,0.13)",
+        backdropFilter: "blur(17px)"
+      }}
+    >
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 px-4 sm:px-6">
         <div className="text-zinc-500 dark:text-zinc-300 text-sm">
           © {new Date().getFullYear()} Sathish Portfolio

@@ -5,10 +5,15 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Education from "./components/Education";
+import Resume from "./components/Resume";
 import "./index.css";
 
 // Animation and parallax
 import { ParallaxProvider } from "react-scroll-parallax";
+
+// Routing
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // PUBLIC_INTERFACE
 function App() {
@@ -31,18 +36,33 @@ function App() {
   // PUBLIC_INTERFACE
   const toggleTheme = () => setTheme((t) => (t === "dark" ? "light" : "dark"));
 
+  // Main page layout (Home: all sections one page; subpages for resume/education)
+  const HomeSections = () => (
+    <>
+      <Hero />
+      <Skills />
+      <Projects />
+      <Education />
+      <Resume />
+      <Contact />
+    </>
+  );
+
   return (
     <ParallaxProvider>
-      <div className="bg-background-light dark:bg-background-dark min-h-screen w-full font-sans flex flex-col relative">
-        <Navbar onToggleTheme={toggleTheme} theme={theme} />
-        <main className="flex-1 flex flex-col w-full xl:w-screen max-w-full mx-auto">
-          <Hero />
-          <Skills />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+      <Router>
+        <div className="bg-background-light dark:bg-background-dark min-h-screen w-full font-sans flex flex-col relative">
+          <Navbar onToggleTheme={toggleTheme} theme={theme} />
+          <main className="flex-1 flex flex-col w-full xl:w-screen max-w-full mx-auto pt-16"> {/* pt-16 for fixed navbar spacing */}
+            <Routes>
+              <Route path="/" element={<HomeSections />} />
+              <Route path="/education" element={<Education />} />
+              <Route path="/resume" element={<Resume />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
     </ParallaxProvider>
   );
 }

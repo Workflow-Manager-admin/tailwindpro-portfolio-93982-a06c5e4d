@@ -67,15 +67,19 @@ function Projects() {
           {projects.map((project, idx) => (
             <motion.div
               key={project.name}
-              className="bg-white dark:bg-zinc-800 rounded-xl shadow-micro p-4 flex flex-col
-                         hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 relative motion-reveal border border-zinc-100 dark:border-zinc-800
-                         focus:outline-primary"
+              className="rounded-xl p-4 flex flex-col motion-reveal glass-bg glass-micro border border-white/15 dark:border-zinc-200/8
+                         shadow-micro hover:shadow-2xl hover:-translate-y-2 transition-all duration-200 relative focus:outline-primary"
               initial={{ opacity: 0, y: 48, scale: 0.97 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.66, type: "spring", delay: 0.10 * idx }}
               tabIndex={0}
-              style={{ minHeight: "320px" }}
+              style={{
+                minHeight: "320px",
+                background:
+                  "linear-gradient(124deg,rgba(255,255,255,0.72) 43%,rgba(150,190,255,0.13) 91%)",
+                border: "1px solid rgba(255,255,255,0.16)"
+              }}
             >
               <div className="relative rounded-lg overflow-hidden mb-4">
                 <img

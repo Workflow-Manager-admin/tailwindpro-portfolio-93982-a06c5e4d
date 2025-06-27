@@ -40,13 +40,17 @@ function Skills() {
         {skills.map((skill, idx) => (
           <motion.div
             key={skill.name}
-            className="flex flex-col items-center justify-center rounded-xl shadow-micro p-3 sm:p-4 bg-zinc-100 dark:bg-zinc-800
+            className="flex flex-col items-center justify-center rounded-xl p-3 sm:p-4 glass-bg glass-micro
                       hover:scale-105 focus:scale-105 transition-transform duration-200 min-h-[80px]"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.48, delay: 0.06 * idx }}
             tabIndex={0}
+            style={{
+              background:
+                "linear-gradient(136deg,rgba(255,255,255,0.63) 36%,rgba(200,210,255,0.15) 100%)"
+            }}
           >
             <span className="text-2xl sm:text-3xl mb-2">{skill.icon}</span>
             <span className="font-medium">{skill.name}</span>

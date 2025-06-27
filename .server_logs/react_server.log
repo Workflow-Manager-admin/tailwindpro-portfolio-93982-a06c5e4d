@@ -6,9 +6,9 @@ Attempting to bind to HOST environment variable: 0.0.0.0
 If this was unintentional, check that you haven't mistakenly set it in your shell.
 Learn more here: https://cra.link/advanced-config
 
-(node:2568) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:6350) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:2568) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:6350) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
 Compiled with warnings.
@@ -56,242 +56,6 @@ src/components/Navbar.js
 
 webpack compiled with 1 warning
 Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-webpack compiled with 1 error and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-webpack compiled with 1 error and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-ERROR in ./src/components/Hero.js 6:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 7:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-webpack compiled with 3 errors and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-ERROR in ./src/components/Hero.js 6:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 7:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 6:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-webpack compiled with 5 errors and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-ERROR in ./src/components/Contact.js 8:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 6:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 7:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 6:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-webpack compiled with 6 errors and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-ERROR in ./src/components/Contact.js 8:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 6:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 7:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 6:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-webpack compiled with 6 errors and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-ERROR in ./src/components/Contact.js 8:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 6:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 7:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 6:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Skills.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-webpack compiled with 7 errors and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-ERROR in ./src/components/Contact.js 8:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 6:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 7:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 6:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Skills.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-webpack compiled with 7 errors and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-LOG from webpack.FileSystemInfo
-<w> Managed item /home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/node_modules/react-scroll-parallax isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
-<w> Managed item /home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/node_modules/framer-motion isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
-+ 16 hidden lines
-
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/App.js 15:0-57
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
-
-ERROR in ./src/components/Contact.js 8:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 6:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 7:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 6:0-49
-Module not found: Error: Can't resolve 'react-scroll-parallax' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Skills.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-webpack compiled with 7 errors and 1 warning
-Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-WARNING in [eslint] 
-src/components/Navbar.js
-  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
-
-ERROR in ./src/components/Contact.js 8:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Hero.js 6:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Projects.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-ERROR in ./src/components/Skills.js 5:0-39
-Module not found: Error: Can't resolve 'framer-motion' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
-
-webpack compiled with 4 errors and 1 warning
-Compiling...
 Compiled with warnings.
 
 [eslint] 
@@ -304,5 +68,199 @@ To ignore, add // eslint-disable-next-line to the line before.
 WARNING in [eslint] 
 src/components/Navbar.js
   Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 10:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:10:  'Link' is defined but never used                  no-unused-vars
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+LOG from webpack.FileSystemInfo
+<w> Managed item /home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/node_modules/react-router-dom isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
++ 15 hidden lines
+
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+ERROR in ./src/App.js 20:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src'
+
+ERROR in ./src/components/Navbar.js 5:0-53
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/tailwindpro-portfolio-93982-a06c5e4d/frontend_portfolio_app/src/components'
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Navbar.js
+  Line 3:16:  'useLocation' is defined but never used           no-unused-vars
+  Line 14:7:  'socialLinks' is assigned a value but never used  no-unused-vars
 
 webpack compiled with 1 warning

@@ -22,11 +22,16 @@ function Contact() {
       className="px-2 sm:px-4 py-20 md:py-24 bg-gradient-to-tr from-accent/10 via-white dark:via-zinc-900 to-primary/10 transition"
     >
       <motion.div
-        className="max-w-xl mx-auto rounded-3xl bg-white/90 dark:bg-zinc-900/95 shadow-2xl p-6 sm:p-8"
+        className="max-w-xl mx-auto rounded-3xl glass-bg shadow-2xl p-6 sm:p-8 glass-micro"
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.66 }}
+        style={{
+          background: "linear-gradient(122deg,rgba(255,255,255,0.92) 63%,rgba(140,195,255,0.18) 100%)",
+          border: "1px solid rgba(255,255,255,0.16)",
+          backdropFilter: "blur(20px)"
+        }}
       >
         <h2 className="text-2xl md:text-3xl font-bold text-center text-accent mb-2 animate-fadein-up">Contact Sathish</h2>
         <p className="text-center text-zinc-500 dark:text-zinc-300 mb-7">
