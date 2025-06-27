@@ -1,21 +1,20 @@
 import React, { useRef, useState } from "react";
-import profileOld from "../assets/profile_v2.jpg";
-import profileNew from "../assets/glassmorphic_hero.jpg";
+import profileMain from "../assets/profile_v2.jpg"; // correct glassmorphic/expected profile image
+import profileAlt from "../assets/profile.jpg"; // fallback/demo/test image (if legacy desired)
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 
 /**
  * Hero section for Sathish - animated, 3D, responsive, parallax, and ultra-modern.
- * Adds a tilting/3D effect to the profile image on hover, matching glassmorphic style.
- * Includes toggle between two demo images for visual verification.
+ * Click the "Show Classic Avatar" button to confirm fallback/test image swap.
  */
 // PUBLIC_INTERFACE
 function Hero() {
-  // Toggle test for new/old image
-  const [useNewProfile, setUseNewProfile] = useState(true);
+  // Toggle test for main/alt image
+  const [useMainProfile, setUseMainProfile] = useState(true);
 
-  // Easily switch here for test/demo/validation.
-  const imgSrc = useNewProfile ? profileNew : profileOld;
+  // Use main (glassmorphic) image by default, allow alternate for demo/testing
+  const imgSrc = useMainProfile ? profileMain : profileAlt;
 
   // 3D tilt logic & animation, robust for all use-cases
   const imgRef = useRef(null);
@@ -79,7 +78,7 @@ function Hero() {
         >
           <motion.img
             src={imgSrc}
-            alt={useNewProfile ? "Profile 3D glassmorphic" : "Profile (classic)"}
+            alt={useMainProfile ? "Profile 3D glassmorphic" : "Profile (classic)"}
             initial={{ scale: 0.85, y: 60, opacity: 0 }}
             animate={{ scale: 1, y: 0, opacity: 1 }}
             transition={{ duration: 1, type: "spring", stiffness: 110 }}
@@ -115,7 +114,7 @@ function Hero() {
         </motion.div>
         {/* Toggle demo ONLY: not visible in live site */}
         <button
-          onClick={() => setUseNewProfile((v) => !v)}
+          onClick={() => setUseMainProfile((v) => !v)}
           className="mt-3 px-3 py-1 rounded bg-primary/80 text-white text-xs font-bold shadow-micro hover:bg-accent/95 border border-accent focus:outline-accent transition"
           style={{
             letterSpacing: "0.03em",
@@ -124,7 +123,7 @@ function Hero() {
             outline: "none",
           }}
         >
-          {useNewProfile ? "Show Classic Avatar" : "Show Glassmorph Image"}
+          {useMainProfile ? "Show Classic Avatar" : "Show Main Glassmorph"}
         </button>
       </div>
       <div className="flex flex-col gap-4 max-w-xl z-20 justify-center items-center md:items-start">
