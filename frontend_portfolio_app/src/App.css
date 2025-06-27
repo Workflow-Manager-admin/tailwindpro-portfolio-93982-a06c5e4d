@@ -26,7 +26,74 @@
   background-color: var(--bg-primary);
   color: var(--text-primary);
   min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s, color 0.3s;
+  will-change: background-color, color;
+  overflow-x: hidden;
+  /* Prevent scrollbars with 3D effects */
+}
+
+/* Animation: section fade-in-up */
+@keyframes fadein-up {
+  from { opacity: 0; transform: translateY(52px) scale(0.97); filter: blur(8px);}
+  to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0);}
+}
+
+/* Utility class for reveal */
+.animate-fadein-up {
+  animation: fadein-up 0.95s cubic-bezier(0.65,0.03,0.23,0.98) both;
+}
+
+/* 3D parallax layer background effect (optional helper) */
+.parallax-bg {
+  perspective: 720px;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 125%;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.18;
+  transition: opacity 0.5s;
+}
+
+/* Gradient shimmer for modern look */
+.shimmer {
+  background: linear-gradient(120deg, var(--bg-secondary) 25%, var(--text-secondary) 70%, var(--bg-primary) 100%);
+  background-size: 400% 400%;
+  animation: shimmer-move 3.4s ease-in-out infinite;
+}
+@keyframes shimmer-move {
+  0% {background-position:0% 50%}
+  50% {background-position:100% 50%}
+  100% {background-position:0% 50%}
+}
+
+/* Animate gradient background text, eg. Hi I'm Sathish */
+@keyframes animated-gradient {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+.animate-gradientmove {
+  background-size: 175% 175%;
+  animation: animated-gradient 5.2s ease-in-out infinite;
+}
+
+/* Framer Motion utility override */
+.motion-reveal {
+  will-change: opacity, transform, filter;
+  /* no pointerevents overlay */
+}
+
+/* Decorative circle for depth (hero) */
+.depth-circle {
+  position:absolute; z-index:0; pointer-events:none;
+  width:340px; height:340px;
+  border-radius:65% 35% 70% 30%;
+  left: -70px; top: -120px;
+  background: radial-gradient(circle at 60% 30%, var(--text-secondary) 10%, var(--bg-secondary) 85%);
+  filter: blur(60px) opacity(0.20) brightness(1.08);
 }
 
 .App-logo {

@@ -7,6 +7,9 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
 
+// Animation and parallax
+import { ParallaxProvider } from "react-scroll-parallax";
+
 // PUBLIC_INTERFACE
 function App() {
   // Persistent theme (dark preferred), uses Tailwind's class+custom
@@ -29,16 +32,18 @@ function App() {
   const toggleTheme = () => setTheme((t) => (t === "dark" ? "light" : "dark"));
 
   return (
-    <div className="bg-background-light dark:bg-background-dark min-h-screen w-full font-sans flex flex-col relative">
-      <Navbar onToggleTheme={toggleTheme} theme={theme} />
-      <main className="flex-grow flex flex-col">
-        <Hero />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ParallaxProvider>
+      <div className="bg-background-light dark:bg-background-dark min-h-screen w-full font-sans flex flex-col relative">
+        <Navbar onToggleTheme={toggleTheme} theme={theme} />
+        <main className="flex-1 flex flex-col w-full xl:w-screen max-w-full mx-auto">
+          <Hero />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ParallaxProvider>
   );
 }
 

@@ -12,19 +12,21 @@ const socials = [
 
 // PUBLIC_INTERFACE
 function Footer() {
-  /** Footer with socials and copyright */
+  /** Footer for Sathish's portfolio: modern, minimal, and fully responsive. */
   return (
     <footer className="w-full py-8 bg-zinc-100 dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 transition-colors">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 px-6">
-        <div className="text-zinc-500 dark:text-zinc-300 text-sm">© {new Date().getFullYear()} Kavia Dev</div>
-        <div className="flex gap-4">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 px-4 sm:px-6">
+        <div className="text-zinc-500 dark:text-zinc-300 text-sm">
+          © {new Date().getFullYear()} Sathish Portfolio
+        </div>
+        <div className="flex gap-3 md:gap-4">
           {socials.map(s => (
             <a
               key={s.href}
               href={s.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-600 dark:text-zinc-200 hover:text-accent"
+              className="text-zinc-600 dark:text-zinc-200 hover:text-accent transition-colors"
               aria-label={s.name}
             >{s.icon}</a>
           ))}
