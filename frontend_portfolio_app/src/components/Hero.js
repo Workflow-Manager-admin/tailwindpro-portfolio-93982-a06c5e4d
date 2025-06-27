@@ -1,20 +1,16 @@
-import React, { useRef, useState } from "react";
-import profileMain from "../assets/profile_v2.jpg"; // correct glassmorphic/expected profile image
-import profileAlt from "../assets/profile.jpg"; // fallback/demo/test image (if legacy desired)
+import React, { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 
 /**
  * Hero section for Sathish - animated, 3D, responsive, parallax, and ultra-modern.
- * Click the "Show Classic Avatar" button to confirm fallback/test image swap.
+ * Displays the latest uploaded user profile image from the attachments folder (with full effects).
  */
 // PUBLIC_INTERFACE
 function Hero() {
-  // Toggle test for main/alt image
-  const [useMainProfile, setUseMainProfile] = useState(true);
-
-  // Use main (glassmorphic) image by default, allow alternate for demo/testing
-  const imgSrc = useMainProfile ? profileMain : profileAlt;
+  // Always use the provided attachment image as source (latest upload)
+  // Use relative path for dev server: place the attachment in 'public/attachments/' (see note below)
+  const imgSrc = "/attachments/20250627_174310_57319df325ab39adc90f4899e9f3aa18.jpg";
 
   // 3D tilt logic & animation, robust for all use-cases
   const imgRef = useRef(null);
@@ -25,7 +21,6 @@ function Hero() {
   // Use Framer Motion useTransform to generate the derived shadow filter CSS
   const dropShadow = useTransform(
     shadow,
-    // s is in range ~[-1, 1] (mouse from top to bottom)
     (s) => `drop-shadow(0px ${16 + s * 10}px 44px rgba(63,48,115,0.13))`
   );
 
@@ -78,7 +73,7 @@ function Hero() {
         >
           <motion.img
             src={imgSrc}
-            alt={useMainProfile ? "Profile 3D glassmorphic" : "Profile (classic)"}
+            alt="User Profile 3D glassmorphic"
             initial={{ scale: 0.85, y: 60, opacity: 0 }}
             animate={{ scale: 1, y: 0, opacity: 1 }}
             transition={{ duration: 1, type: "spring", stiffness: 110 }}
@@ -95,7 +90,7 @@ function Hero() {
               transformPerspective: 800,
               rotateX,
               rotateY,
-              filter: dropShadow, // use framer-motion's animated transform, not .to()
+              filter: dropShadow,
               transition: "box-shadow .4s cubic-bezier(.55,.1,.16,.99)",
             }}
           />
@@ -112,19 +107,6 @@ function Hero() {
             aria-hidden="true"
           />
         </motion.div>
-        {/* Toggle demo ONLY: not visible in live site */}
-        <button
-          onClick={() => setUseMainProfile((v) => !v)}
-          className="mt-3 px-3 py-1 rounded bg-primary/80 text-white text-xs font-bold shadow-micro hover:bg-accent/95 border border-accent focus:outline-accent transition"
-          style={{
-            letterSpacing: "0.03em",
-            opacity: 0.82,
-            marginBottom: "6px",
-            outline: "none",
-          }}
-        >
-          {useMainProfile ? "Show Classic Avatar" : "Show Main Glassmorph"}
-        </button>
       </div>
       <div className="flex flex-col gap-4 max-w-xl z-20 justify-center items-center md:items-start">
         <motion.h1
